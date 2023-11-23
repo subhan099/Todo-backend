@@ -84,7 +84,6 @@ export class TodoService {
       },
     });
     if (check) {
-      // console.log('===========', check);
       return {
         message: '',
         status: 'success',

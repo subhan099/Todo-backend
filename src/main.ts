@@ -5,6 +5,6 @@ import { JwtAuthGuard } from './auth/guard/jwt.guard';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
   app.useGlobalGuards(new JwtAuthGuard());
-  await app.listen(3000);
+  await app.listen(4000);
 }
 bootstrap();
